@@ -1,0 +1,76 @@
+
+body {
+	margin: 5% 5% 5% 5%;
+	padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+	
+	line-height: 25px;
+	font-weight: 100;
+	background: linear-gradient(60deg, #CCFFFF, #FFCCCC);
+}
+
+.card {
+	margin: 2% 0% 3% 0%;
+    text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+a {
+	border: none; /* Remove borders */
+	border-radius: 5px;
+    background-color: #79B;
+	color: #ddd; /* Add a text color */
+    text-decoration: none;
+	font-weight: 750;
+    font-family: sans-serif;
+	margin: 2px;
+	padding: 14px 28px; /* Add some padding */
+	cursor: pointer; /* Add a pointer cursor on mouse-over */
+	box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 1px 1px rgba(0,0,0,0.23);
+}
+a:hover {
+    background-color: #68A;
+}
+
+table {
+	margin: 2% 5% 3% 5%;
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 90%;
+}
+
+caption {
+    font-weight: bold;
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+th {
+    border: 2px solid;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: linear-gradient(60deg, #00FFFF, #FF0000);
+}
+td {
+    border: 1px solid #ccc;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding: 8px;
+}
+
+#column-first {
+    width: 10%
+}
+#column-second {
+    width: 50%
+}
+#column-third {
+    width: 40%
+}
