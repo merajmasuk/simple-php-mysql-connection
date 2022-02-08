@@ -54,6 +54,6 @@
             mysqli_close($link);
         ?>
     </div>
-    <button><a href="home.php">Return to home</a></button>
+    <a href="home.php">Return to home</a>
 </body>
 </html>

@@ -129,5 +129,6 @@
         }
         mysqli_close($link);
     ?>
+    <a href="home.php">Return to home</a>
 </body>
 </html>
