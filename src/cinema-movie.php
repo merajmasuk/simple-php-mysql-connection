@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type ="text/css" href="resources/static/css/table.css">
+    <link rel="stylesheet" type ="text/css" href="../resources/static/css/table.css">
     <title>Display Data</title>
 </head>
 <body>
     <div class="card">
         <?php
-            $creds = parse_ini_file("php.ini", "r"); 
+            $creds = parse_ini_file("../conf.d/php.ini", "r");
             $link = mysqli_connect("127.0.0.1", $creds[username], $creds[password], "cinema");
 
             if (!$link) {
@@ -44,10 +44,10 @@
                 <td id="column-first"><?php echo($d_row["mid"]); ?></td>
                 <td id="column-second"><?php echo($d_row["mtitle"]); ?></td>
                 <td id="column-third"><?php echo($d_row["myear"]); ?></td>
-            </tr>         
-        <?php	
+            </tr>
+        <?php
 
-            }	
+            }
         ?>
         </table>
         <?php

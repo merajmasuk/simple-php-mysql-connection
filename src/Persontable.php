@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type ="text/css" href="resources/static/css/form.css">
+    <link rel="stylesheet" type ="text/css" href="../resources/static/css/form.css">
     <title>Person Table</title>
 </head>
 <body>
@@ -31,9 +31,9 @@
                     </div>
                     <button class="button login__submit">
                         <span class="button__text">INSERT</span>
-                    </button>				
+                    </button>
                 </form>
-            </div>	
+            </div>
         </div>
     </div>
     <?php else : ?>
@@ -46,7 +46,7 @@
 
         //Make a connection to the database
         //databasehostname is usually "localhost"
-        $creds = parse_ini_file("php.ini", "r"); 
+        $creds = parse_ini_file("../conf.d/php.ini", "r");
         $link = mysqli_connect("127.0.0.1", $creds[username], $creds[password], "cinema");
 
         //Check the connection
@@ -60,7 +60,6 @@
         $sex = htmlspecialchars($_POST['sex']);
         $dob = htmlspecialchars($_POST['dob']);
 
-                
         $sql = "INSERT INTO person (pid, pname, psex,pdob)
         VALUES ($id, '$name', '$sex','$dob')";
 
@@ -71,26 +70,25 @@
             echo "Error: " . $sql . "<br>" . $link->error;
         }
     ?>
-    
+
     <br>
     <button id="half" onclick="choose(1)">Try again</button>
     <button id="half" onclick="choose(2)">Go home</button>
-    
+
     <?php
 
         $link->close();
     ?>
 
     <?php endif ?>
-    
-    
+
     <script>
         function choose(opt) {
             if (opt == 1) {
                 window.location.href = "Persontable.php"
             }
             if (opt == 2) {
-                window.location.href = "home.php"
+                window.location.href = "../index.php"
             }
         }
     </script>

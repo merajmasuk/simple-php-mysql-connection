@@ -12,9 +12,9 @@
     <!--<div>
         <header style="width: 100%">
             <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="insert.php">Insert</a></li>
-                <li><a href="view.php">View</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="src/insert.php">Insert</a></li>
+                <li><a href="src/view.php">View</a></li>
             <ul>
         </header>
     </div>-->
@@ -33,10 +33,10 @@
     <script>
         function choose(opt) {
             if (opt == 1) {
-                window.location.href = "insert.php"
+                window.location.href = "src/insert.php"
             }
             if (opt == 2) {
-                window.location.href = "view.php"
+                window.location.href = "src/view.php"
             }
         }
     </script>
